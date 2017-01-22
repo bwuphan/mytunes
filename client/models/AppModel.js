@@ -23,7 +23,7 @@ var AppModel = Backbone.Model.extend({
 
     params.library.on('stop', function(){
       this.set('currentSong', null);
-    });
+    }, this);
   }
 
 });
